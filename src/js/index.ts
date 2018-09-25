@@ -1,12 +1,26 @@
-interface Person {
-    firstName: string;
-    lastName: string;
+// Opgave 1
+let el = document.getElementById("one");
+// console.log(el);
+
+let elsClass = document.getElementsByClassName("usundt");
+// console.log(elsClass);
+
+let elsTag = document.getElementsByTagName("li");
+//console.log(elsTag);
+
+// Opgave 2
+for(let i = 0; i < elsTag.length; i++) {
+    // console.log("Class:" + elsTag[i].className);
 }
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-let user: Person = { firstName: "John", lastName: "Doe" };
+// Opgave 3
+el.setAttribute("class", "random");
 
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+let el2 = document.getElementById("two");
+//el2.setAttribute("hidden", "true");
+
+let usunde = document.getElementsByClassName("usundt");
+console.log(usunde);
+for (let i = 0; i < usunde.length; i++) {
+    usunde[i].setAttribute("class", "sund");
+}
